@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#169b62">
+  <meta name="description" content="Стулья против Парт — аркадный платформер">
+  <title>Стулья против Парт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <form id="authForm" onsubmit="return false">
+    <input id="authEmail" type="email" class="auth-input" placeholder="Email"
+           autocomplete="off" spellcheck="false" autocapitalize="off" enterkeyhint="next">
+    <input id="authPassword" type="password" class="auth-input" placeholder="Пароль"
+           autocomplete="off" spellcheck="false" enterkeyhint="go">
+    <input id="authCode" type="tel" inputmode="numeric" maxlength="6" class="auth-input"
+           placeholder="Код (6 цифр)" autocomplete="off" spellcheck="false" enterkeyhint="go">
+    <button type="submit" style="display:none"></button>
+  </form>
+
+  <div id="rotate">
+    <div class="icon">📱</div>
+    <div class="txt">Поверни телефон<br>горизонтально</div>
+  </div>
+
+  <!-- EmailJS SDK — ОБЯЗАТЕЛЬНО до game.js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="game.js"></script>
+</body>
+</html>
